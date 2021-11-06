@@ -1,0 +1,42 @@
+1 ~ Deployed
+
+2 ~ Nmap scan:
+
+```
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 34:0e:fe:06:12:67:3e:a4:eb:ab:7a:c4:81:6d:fe:a9 (RSA)
+|   256 49:61:1e:f4:52:6e:7b:29:98:db:30:2d:16:ed:f4:8b (ECDSA)
+|_  256 b8:60:c4:5b:b7:b2:d0:23:a0:c7:56:59:5c:63:1e:c4 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: House of danak
+
+
+```
+3 ~ Cracked ssh id_rsa with john the ripper. 
+
+4 ~ Got into machine.
+
+5 ~ Grabbed user.txt
+
+6 ~ Now looking for privesc :D
+
+
+7 ~ run id and you will see we are a part of lxd group.
+```
+	https://www.hackingarticles.in/lxd-privilege-escalation/
+
+```
+
+
+INFO: 
+
+```
+
+	What is root_squash?
+	By default, on NFS shares- Root Squashing is enabled, and prevents anyone connecting to the NFS share from having root access to the NFS volume. Remote root users are assigned a user “nfsnobody” when connected, which has the least local privileges. Not what we want. However, if this is turned off, it can allow the creation of SUID bit files, allowing a remote user root access to the connected system.		
+
+
+```

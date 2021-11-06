@@ -1,0 +1,22 @@
+1 ~ Open ports: 
+
+22 - ssh
+80 -http
+
+Just a classic room :D
+
+
+2 ~ Found robots.txt
+
+User-agent: *
+fsocity.dic
+key-1-of-3.txt
+
+
+3 ~ With brute-forcing we got username and password 
+
+username: Elliot
+password: ER28-062
+
+
+4 ~ Go to themes, edit and make 404 template to return reverse shell.

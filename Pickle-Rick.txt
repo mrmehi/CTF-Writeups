@@ -1,0 +1,18 @@
+1 ~ Scaning for open ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+
+2 ~ Username is : R1ckRul3s
+Possible password: Wubbalubbadubdub
+
+3 ~ We got a reverse shell in perl pr.lang.
+
+4 ~ Sudo -l shows 
+(ALL) NOPASSWD: ALL
+
+So we can do `` sudo su ``  and done :D
+
+
+

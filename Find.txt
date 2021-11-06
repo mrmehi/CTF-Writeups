@@ -1,0 +1,16 @@
+1 ~ Find all files whose name ends with ".xml"
+```find / -type f -name "*.xml"```
+
+
+2 ~ Find all files in the /home directory (recursive) whose name is "user.txt" (case insensitive)
+```find /home -type f -iname  "user.txt"```
+
+
+3 ~ Find all directories whose name contains the word "exploits"
+
+```find / -type d -name "*exploits*"```
+
+4 ~ Find all files owned by the user "kittycat"
+```find / -type f -user kittcat ```
+
+Reference: https://www.oreilly.com/library/view/linux-pocket-guide/9780596806347/re44.html

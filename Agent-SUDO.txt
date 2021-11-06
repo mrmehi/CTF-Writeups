@@ -1,0 +1,11 @@
+1 ~ Classic open port scanning :D
+
+2 ~ Found a hidden directory 
+http://10.10.108.127/agent_C_attention.php
+
+
+3 ~ What is password is ZIP file?
+Grabbed 3 files that 2 of them were png and jpg.
+By using ``` binwalk cutie.png -e ``` we grabbed hidden zip file and cracked it 
+
+``` ANS: alien```

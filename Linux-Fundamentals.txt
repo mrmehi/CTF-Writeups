@@ -1,0 +1,11 @@
+1 ~ SSH into the server.
+
+2 ~ && means as you might expect "and". Meaning && allows you to execute a second command after the first one has executed successfully. 
+Meaning ls && echo hello will work fine, but dljahfrsdkjlhfsdhjklfsdhkljfh && echo hello will fail.
+
+3 ~ The ; operator works a lot like &&, however it does not require the first command to execute successfully.
+ This means that you can do dkhsgffgsafgfasdgfasfghkgdsgfs; ls and you would still see the output of ls.
+
+4 ~ >> does mainly the same thing as >, with one key difference. >> appends the output of a command to a file, instead of erasing it.
+
+5 ~ If I wanted to add the user noot to b I would run `usermod -a -G b noot`
