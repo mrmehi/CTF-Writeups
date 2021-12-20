@@ -34,4 +34,4 @@
 
 5 ~ Grabbed image file and used `strings` on this file.
 
-6 ~ ssh into the machine using the credentials we got from FTP  and you will know what to do next ;)
+6 ~ ssh into the machine using the credentials we got from FTP and the rest is easy peasy.
