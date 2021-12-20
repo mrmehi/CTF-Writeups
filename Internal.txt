@@ -4,7 +4,7 @@
 2 - Using nmap to perform port scan:
 
 
-4 - Port Scan Results:
+3 - Port Scan Results:
 
 
 
@@ -25,33 +25,33 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 `
 
-5 - Since it is not a good idea to spend time on enumurating ssh, I will start with http service.
+4 - Since it is not a good idea to spend time on enumurating ssh, I will start with http service.
 
 
-6 - Adding IP to /etc/hosts (internal.thm)
+5 - Adding IP to /etc/hosts (internal.thm)
 
-7 - Path:/ 
+6 - Path:/ 
 
 Default Apache Config page which does not have something odd in the source code.
 
-8 - Path: /blog
+7 - Path: /blog
 
 Seemingly a wordpress website
 
-9 - With `wpscan URL -e `, I found a possible user of "admin"
+8 - With `wpscan URL -e `, I found a possible user of "admin"
 
-10 - Trying to brute-force the `/wp-admin` with the username "admin"
+9 - Trying to brute-force the `/wp-admin` with the username "admin"
 
-11 - Found password : "my2boys"
+10 - Found password : "my2boys"
 
-12 - By changing the 404.php file into reverse shell php code, we successfully get a connection back.
-
-
-
-13 - Credentials: aubreanna:bubb13guM!@#123
+11 - By changing the 404.php file into reverse shell php code, we successfully get a connection back.
 
 
-14 - There is a service called "Jenkins" running locally. With ssh tunneling we can access to that service by using "ssh -L".
+
+12 - Credentials: aubreanna:bubb13guM!@#123
 
 
-15 - Become root and grab root.txt
+13 - There is a service called "Jenkins" running locally. With ssh tunneling we can access to that service by using "ssh -L".
+
+
+14 - Become root and grab root.txt
