@@ -1,6 +1,4 @@
-1 ~ Deployed
-
-2 ~ Nmap Scan:
+1 ~ Initial port scan:
 
 
 ```
@@ -33,4 +31,4 @@
 
 ```
 
-3 ~ Got a txt from ftp and a potensial user's name is Jake, so we brute-forced ssh with hydra and got the ssh password.
+3 ~ Got a txt from ftp and a potensial username is Jake, so we brute-forced ssh with hydra and got the ssh password.
