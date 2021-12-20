@@ -1,0 +1,2 @@
+ssh -o StrictHostKeyChecking=no
+Will disable long fingerprint acknowledgements
