@@ -1,4 +1,4 @@
-1 ~ Find all files whose name ends with ".xml"
+1 ~ Find all files which name ends with ".xml"
 ```find / -type f -name "*.xml"```
 
 
