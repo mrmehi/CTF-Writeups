@@ -63,12 +63,6 @@ Note: You need to collect all 4 crests, combine and decode to reavel another pat
 The combination should be crest 1 + crest 2 + crest 3 + crest 4. Also, the combination is a type of encoded base and you need to decode it
 
 
-
-
-
-
-
-
 ```
 
 Possible username or password: rebecca
