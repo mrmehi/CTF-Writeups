@@ -8,4 +8,4 @@ Meaning ls && echo hello will work fine, but dljahfrsdkjlhfsdhjklfsdhkljfh && ec
 
 4 ~ >> does mainly the same thing as >, with one key difference. >> appends the output of a command to a file, instead of erasing it.
 
-5 ~ If I wanted to add the user noot to b I would run `usermod -a -G b noot`
+5 ~ If I wanted to add the user noot to the group b I would run `usermod -a -G b noot`
