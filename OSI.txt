@@ -4,7 +4,7 @@ The OSI model consists of seven layers:
 
 There are many mnemonics floating around to help you learn the layers of the OSI model -- search around until you find one that you like.
 
-I personally favour: Anxious Pale Shakespeare Treated Nervous Drunks Patiently
+PLAESE DO NOT TAKE SAUSAGE PIZZA AWAY
 
 Let's briefly take a look at each of these in turn:
 
