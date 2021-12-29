@@ -14,3 +14,12 @@
 ```find / -type f -user kittcat ```
 
 Reference: https://www.oreilly.com/library/view/linux-pocket-guide/9780596806347/re44.html
+
+
+5 ~ If you want to work on multiple files, here is an example
+
+
+```
+find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name FHl1 -o -name oiM0 -o -name PFbD -o -name rmfX -o -name SRSq -o -name uqyw -o -name v2Vb -o -name X1Uy \) -exec ls -l {} \; 2>/dev/null
+```
+-o means “OR”
